@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <style>
-        :root{--navy:#0B1829;--navy2:#101F34;--navy3:#162845;--dark:#06101C;--gold:#C6A550;--gold2:#D4B65E;--gold3:#E6D28A;--gold-dim:rgba(198,165,80,.12);--gold-border:rgba(198,165,80,.25);--white:#FFF;--light:#E4E2DC;--light2:#D0CEC8;--gray:#8892A4;--gray2:#6B7588;--blue:#1A3A6E;--serif:'Cinzel',serif;--sans:'Inter',sans-serif;--display:'Playfair Display',serif;--body:'Source Serif 4',serif}
+        :root{--navy:#FFF;--navy2:#F8F7F4;--navy3:#F0EDE8;--dark:#1B1B2F;--gold:#B71C1C;--gold2:#C62828;--gold3:#B71C1C;--gold-dim:rgba(183,28,28,.05);--gold-border:rgba(183,28,28,.15);--white:#1A1A1A;--light:#333;--light2:#444;--gray:#555;--gray2:#888;--blue:#1B1B2F;--serif:'Cinzel',serif;--sans:'Inter',sans-serif;--display:'Playfair Display',serif;--body:'Source Serif 4',serif}
         *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--navy);color:var(--light);-webkit-font-smoothing:antialiased;overflow-x:hidden}::selection{background:var(--gold);color:var(--dark)}
         h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:.04em}a{text-decoration:none;color:inherit}
         .container{max-width:1180px;margin:0 auto;padding:0 36px}
@@ -210,6 +210,63 @@
         /* === REVEAL === */
         .rv{opacity:0;transform:translateY(24px);transition:all .6s cubic-bezier(.16,1,.3,1)}.rv.vis{opacity:1;transform:none}
 
+        /* === RED ON WHITE OVERRIDES === */
+        body{background:#FFF;color:#333}
+        ::selection{color:#FFF}
+        .ubar{background:#B71C1C;border-bottom:none;color:rgba(255,255,255,.9)}
+        .ubar a{color:rgba(255,255,255,.8)}.ubar a:hover{color:#FFF}
+        .ubar-lang select{color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.2)}
+        .mnav{background:rgba(255,255,255,.98);border-bottom:1px solid rgba(0,0,0,.06);box-shadow:0 1px 6px rgba(0,0,0,.04)}
+        .mnav-links>a{color:#555}
+        .hero-bg{background:linear-gradient(135deg,#111122 0%,#1B1B2F 50%,#252545 100%)}
+        .hero-glow{background:radial-gradient(ellipse,rgba(183,28,28,.1) 0%,transparent 65%)}
+        .hero-text h1{color:#FFF}.hero-text h1 em{color:#E57373}
+        .hero .sec-badge{color:#E57373;border-color:rgba(229,115,115,.3)}
+        .hero .verse{color:rgba(255,200,200,.7)}
+        .hero-text p{color:rgba(255,255,255,.6)}
+        .hero .btn-out{border-color:rgba(255,255,255,.25);color:#FFF}.hero .btn-out:hover{background:rgba(255,255,255,.08)}
+        .hero-video{border-color:rgba(255,255,255,.08)}
+        .hero-video::after{background:rgba(183,28,28,.9);color:#FFF}
+        .hero-video:hover::after{background:#B71C1C}
+        .hero-video-label{color:#EEE}
+        .sbar{background:linear-gradient(135deg,#B71C1C,#C62828)}
+        .sbar-n{color:#FFF}.sbar-l{color:rgba(255,255,255,.6)}
+        .sec-dk{background:#F0EDE8}
+        .sb-card{border-color:rgba(0,0,0,.06);box-shadow:0 2px 12px rgba(0,0,0,.03)}
+        .doctrine-card{border:1px solid rgba(0,0,0,.05);border-left:3px solid var(--gold)}
+        .creed{border-color:rgba(183,28,28,.15);background:#FFF}
+        .creed p{color:#333}
+        .vid-card{border-color:rgba(0,0,0,.06)}.vid-card:hover{border-color:rgba(183,28,28,.2)}
+        .vid-thumb{background:linear-gradient(135deg,#1B1B2F,#111122)}
+        .vid-thumb::after{color:#FFF}
+        .ch-card{border-color:rgba(0,0,0,.06)}.ch-card:hover{border-color:rgba(183,28,28,.15)}
+        .news-card{border-color:rgba(0,0,0,.06)}.news-card:hover{border-color:rgba(183,28,28,.15)}
+        .news-img{background:linear-gradient(135deg,#1B1B2F,#252545)}
+        .prog-card{border-color:rgba(0,0,0,.05);border-top:3px solid var(--gold)}
+        .faq-item{border-color:rgba(0,0,0,.06)}
+        .expander{border-color:rgba(0,0,0,.06)}
+        .auth-box{background:#FFF;border-color:rgba(0,0,0,.1);box-shadow:0 8px 40px rgba(0,0,0,.15)}
+        .auth-box input,.auth-box select{background:#F5F3EF;border-color:rgba(0,0,0,.1);color:#1A1A1A}
+        .auth-box input::placeholder{color:#999}
+        .auth-sw{color:#888}
+        .footer{background:#1B1B2F;border-top:1px solid rgba(255,255,255,.05)}
+        .ft-brand{color:#E57373}.ft-desc{color:#999}
+        .ft-social a{border-color:rgba(255,255,255,.1);color:#888}.ft-social a:hover{border-color:#E57373;color:#E57373}
+        .footer h4{color:#E57373}.footer a{color:#888}.footer a:hover{color:#E57373}
+        .ft-legal{color:rgba(255,255,255,.12)}.ft-legal-links a{color:rgba(255,255,255,.25)}
+        .modal-box{border-color:rgba(0,0,0,.1)}
+        .mnav-links.mob{display:flex!important;position:fixed;top:60px;left:0;right:0;background:rgba(255,255,255,.98);flex-direction:column;padding:20px;z-index:999;border-bottom:1px solid rgba(0,0,0,.08);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+        .mnav-links.mob a{height:auto!important;padding:10px 14px!important}
+
+        /* === VIDEO MODAL === */
+        .vid-modal{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:3000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+        .vid-modal.on{opacity:1;pointer-events:all}
+        .vid-modal-inner{width:90vw;max-width:960px;position:relative}
+        .vid-modal-close{position:absolute;top:-40px;right:0;color:#FFF;font-size:28px;cursor:pointer;background:none;border:none;z-index:1}.vid-modal-close:hover{color:#E57373}
+        .vid-modal-frame{aspect-ratio:16/9;width:100%;background:#000}
+        .vid-modal-frame iframe{width:100%;height:100%;border:none}
+        .vid-modal-title{color:#FFF;font-family:var(--sans);font-size:14px;margin-top:12px;font-weight:500}
+
         /* === RESPONSIVE === */
         @media(max-width:960px){
             .ubar{display:none}
@@ -234,7 +291,7 @@
 <div class="auth-overlay" id="authOverlay">
     <div class="auth-box">
         <button class="auth-x" onclick="closeAuth()">&times;</button>
-        <svg width="40" height="40" viewBox="0 0 40 40" style="display:block;margin:0 auto"><line x1="20" y1="2" x2="20" y2="38" stroke="#C6A550" stroke-width="1.5"/><line x1="2" y1="20" x2="38" y2="20" stroke="#C6A550" stroke-width="1.5"/><circle cx="20" cy="20" r="12" stroke="#C6A550" stroke-width="1.5" fill="none"/></svg>
+        <svg width="40" height="40" viewBox="0 0 40 40" style="display:block;margin:0 auto"><line x1="20" y1="2" x2="20" y2="38" stroke="#B71C1C" stroke-width="1.5"/><line x1="2" y1="20" x2="38" y2="20" stroke="#B71C1C" stroke-width="1.5"/><circle cx="20" cy="20" r="12" stroke="#B71C1C" stroke-width="1.5" fill="none"/></svg>
         <div id="frmLogin">
             <h2>Member Access</h2>
             <p class="desc">Sign in to access teachings, your Spiritual Evaluation results, and member resources.</p>
@@ -343,7 +400,7 @@
 <!-- MAIN NAV -->
 <nav class="mnav">
     <div class="mnav-brand" onclick="showP('home')">
-        <svg class="mnav-logo" viewBox="0 0 28 28"><line x1="14" y1="1" x2="14" y2="27" stroke="#C6A550" stroke-width="1.2"/><line x1="1" y1="14" x2="27" y2="14" stroke="#C6A550" stroke-width="1.2"/><circle cx="14" cy="14" r="8.5" stroke="#C6A550" stroke-width="1.2" fill="none"/></svg>
+        <svg class="mnav-logo" viewBox="0 0 28 28"><line x1="14" y1="1" x2="14" y2="27" stroke="#B71C1C" stroke-width="1.2"/><line x1="1" y1="14" x2="27" y2="14" stroke="#B71C1C" stroke-width="1.2"/><circle cx="14" cy="14" r="8.5" stroke="#B71C1C" stroke-width="1.2" fill="none"/></svg>
         <span class="mnav-name">Spiritology</span>
     </div>
     <div class="mnav-links">
@@ -377,7 +434,7 @@
                 <button class="btn btn-out" onclick="showP('what')">What is Spiritology?</button>
             </div>
         </div>
-        <div class="hero-video" onclick="openAuth('r')">
+        <div class="hero-video" onclick="playVid(0)">
             <div class="hero-video-label">Watch: <strong>Introduction to Spiritology</strong> · 12:47</div>
         </div>
     </div>
@@ -472,12 +529,12 @@
     <div class="container">
         <div class="sec-hd ctr rv"><div class="sec-badge">Watch</div><h2 class="sec-title">Inside <em>Spiritology</em></h2></div>
         <div class="vid-grid rv">
-            <div class="vid-card" onclick="openAuth('r')"><div class="vid-thumb"></div><div class="vid-info"><h4>What is Spiritology?</h4><p>12:47 · Introduction</p></div></div>
-            <div class="vid-card" onclick="openAuth('r')"><div class="vid-thumb"></div><div class="vid-info"><h4>The Creed of the Church</h4><p>4:23 · Beliefs</p></div></div>
-            <div class="vid-card" onclick="openAuth('r')"><div class="vid-thumb"></div><div class="vid-info"><h4>How Processing Works</h4><p>18:31 · Technology</p></div></div>
-            <div class="vid-card" onclick="openAuth('r')"><div class="vid-thumb"></div><div class="vid-info"><h4>The Bridge Explained</h4><p>22:15 · The Path</p></div></div>
-            <div class="vid-card" onclick="openAuth('r')"><div class="vid-thumb"></div><div class="vid-info"><h4>Dr. Voss: A Life's Work</h4><p>34:02 · Founder</p></div></div>
-            <div class="vid-card" onclick="openAuth('r')"><div class="vid-thumb"></div><div class="vid-info"><h4>Community Programs</h4><p>8:56 · How We Help</p></div></div>
+            <div class="vid-card" onclick="playVid(1)"><div class="vid-thumb"></div><div class="vid-info"><h4>What is Spiritology?</h4><p>17:00 · Introduction</p></div></div>
+            <div class="vid-card" onclick="playVid(2)"><div class="vid-thumb"></div><div class="vid-info"><h4>The Creed of the Church</h4><p>4:23 · Beliefs</p></div></div>
+            <div class="vid-card" onclick="playVid(3)"><div class="vid-thumb"></div><div class="vid-info"><h4>How Processing Works</h4><p>18:31 · Technology</p></div></div>
+            <div class="vid-card" onclick="playVid(4)"><div class="vid-thumb"></div><div class="vid-info"><h4>The Bridge Explained</h4><p>30:00 · The Path</p></div></div>
+            <div class="vid-card" onclick="playVid(5)"><div class="vid-thumb"></div><div class="vid-info"><h4>Dr. Voss: A Life's Work</h4><p>30:00 · Founder</p></div></div>
+            <div class="vid-card" onclick="playVid(6)"><div class="vid-thumb"></div><div class="vid-info"><h4>Community Programs</h4><p>20:00 · How We Help</p></div></div>
         </div>
     </div>
 </section>
@@ -500,7 +557,7 @@
 <!-- CTA -->
 <section class="sec sec-nv" style="padding:80px 0;text-align:center">
     <div class="container rv">
-        <svg width="50" height="50" viewBox="0 0 50 50" style="margin-bottom:24px"><line x1="25" y1="2" x2="25" y2="48" stroke="#C6A550" stroke-width="1.5"/><line x1="2" y1="25" x2="48" y2="25" stroke="#C6A550" stroke-width="1.5"/><circle cx="25" cy="25" r="15" stroke="#C6A550" stroke-width="1.5" fill="none"/></svg>
+        <svg width="50" height="50" viewBox="0 0 50 50" style="margin-bottom:24px"><line x1="25" y1="2" x2="25" y2="48" stroke="#B71C1C" stroke-width="1.5"/><line x1="2" y1="25" x2="48" y2="25" stroke="#B71C1C" stroke-width="1.5"/><circle cx="25" cy="25" r="15" stroke="#B71C1C" stroke-width="1.5" fill="none"/></svg>
         <h2 class="sec-title">Your Journey <em>Begins Here</em></h2>
         <p class="sec-desc" style="margin:0 auto 28px">The Spiritual Evaluation is free, confidential, and takes approximately 45 minutes. It will map your consciousness profile across all four layers and reveal the reactive patterns that have been operating beneath your awareness.</p>
         <button class="btn btn-gold" onclick="openAuth('r')">Take the Free Evaluation</button>
@@ -736,7 +793,39 @@
 
 <div class="notify-bar" id="notifyBar" onclick="openAuth('r')">Your Spiritual Evaluation is waiting. <span>Begin now — it's free and confidential.</span></div>
 
+<!-- VIDEO MODAL -->
+<div class="vid-modal" id="vidModal" onclick="if(event.target===this)closeVid()">
+    <div class="vid-modal-inner">
+        <button class="vid-modal-close" onclick="closeVid()">&times;</button>
+        <div class="vid-modal-frame" id="vidFrame"></div>
+        <div class="vid-modal-title" id="vidTitle"></div>
+    </div>
+</div>
+
 <script>
+// Videos
+const VIDEOS=[
+    {id:'H6u0VBqNBQ8',t:'Introduction to Spiritology'},
+    {id:'lyu7v7nWzfo',t:'What is Spiritology?'},
+    {id:'mMRrCYPxD0I',t:'The Creed of the Church'},
+    {id:'wTBSGgbIvsY',t:'How Processing Works'},
+    {id:'aXuTt7c3Jkg',t:'The Bridge Explained'},
+    {id:'DRObW9noiVk',t:"Dr. Voss: A Life's Work"},
+    {id:'SHQWUERptAM',t:'Community Programs'}
+];
+function playVid(i){
+    let v=VIDEOS[i];
+    document.getElementById('vidFrame').innerHTML='<iframe src="https://www.youtube.com/embed/'+v.id+'?autoplay=1&rel=0" allowfullscreen allow="autoplay"></iframe>';
+    document.getElementById('vidTitle').textContent=v.t;
+    document.getElementById('vidModal').classList.add('on');
+    document.body.style.overflow='hidden';
+}
+function closeVid(){
+    document.getElementById('vidModal').classList.remove('on');
+    document.getElementById('vidFrame').innerHTML='';
+    document.body.style.overflow='';
+}
+
 // Pages
 function showP(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));let p=document.getElementById('p-'+n);if(p)p.classList.add('on');document.querySelectorAll('.mnav-links>a').forEach(a=>{a.classList.toggle('act',a.dataset.p===n)});window.scrollTo(0,0);setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight)el.classList.add('vis')}),100)}
 
@@ -801,12 +890,7 @@ function toggleFaq(el){
 
 // Mobile nav
 function toggleMobileNav(){
-    let links=document.querySelector('.mnav-links');
-    links.style.display=links.style.display==='flex'?'none':'flex';
-    links.style.position='fixed';links.style.top='60px';links.style.left='0';links.style.right='0';
-    links.style.background='rgba(11,24,41,.98)';links.style.flexDirection='column';
-    links.style.padding='20px';links.style.zIndex='999';links.style.borderBottom='1px solid rgba(198,165,80,.15)';
-    links.querySelectorAll('a').forEach(a=>{a.style.height='auto';a.style.padding='10px 14px'});
+    document.querySelector('.mnav-links').classList.toggle('mob');
 }
 
 // Reveal on scroll
@@ -814,10 +898,10 @@ const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isI
 document.querySelectorAll('.rv').forEach(el=>observer.observe(el));
 
 // Notification bar
-setTimeout(()=>{let nb=document.getElementById('notifyBar');if(nb)nb.style.cssText='position:fixed;bottom:0;left:0;right:0;background:var(--gold);color:var(--dark);text-align:center;padding:12px 20px;font-size:12px;font-weight:600;cursor:pointer;z-index:1500;font-family:var(--sans);letter-spacing:.04em';nb.querySelector('span').style.cssText='font-weight:400;opacity:.7;margin-left:8px'},5000);
+setTimeout(()=>{let nb=document.getElementById('notifyBar');if(nb)nb.style.cssText='position:fixed;bottom:0;left:0;right:0;background:#B71C1C;color:#FFF;text-align:center;padding:12px 20px;font-size:12px;font-weight:600;cursor:pointer;z-index:1500;font-family:var(--sans);letter-spacing:.04em';nb.querySelector('span').style.cssText='font-weight:400;opacity:.7;margin-left:8px'},5000);
 
 // Keyboard
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAuth();document.querySelectorAll('.modal.on').forEach(m=>{let id=m.id.replace('modal','').toLowerCase();closeModal(id)})}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAuth();closeVid();document.querySelectorAll('.modal.on').forEach(m=>{let id=m.id.replace('modal','').toLowerCase();closeModal(id)})}});
 
 // Close modals/auth on background click
 document.getElementById('authOverlay').addEventListener('click',function(e){if(e.target===this)closeAuth()});
